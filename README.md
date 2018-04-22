@@ -1,15 +1,8 @@
-## 排队等队查看桌餐H5页面
+## infernojs mobile demo
 
 > 使用了类react框架 inferno.js，以及ant-mobile.
 
-- 安装依赖
-`yarn`
-
-- 开发运行
-
-`yarn start`
-- 构建
-`yarn build`
-
-- 模拟部署
-`yarn serve`
+1. 安装依赖 `yarn`
+2. 开发运行 `yarn start`
+3. 构建 `yarn build`
+4. 模拟部署 `yarn global add serve` `yarn serve`
