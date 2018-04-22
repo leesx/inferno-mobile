@@ -5,4 +5,5 @@
 1. 安装依赖 `yarn`
 2. 开发运行 `yarn start`
 3. 构建 `yarn build`
-4. 模拟部署 `yarn global add serve` `yarn serve`
+4. 模拟部署  `yarn serve`
+> 别忘记 `yarn global add serve`
