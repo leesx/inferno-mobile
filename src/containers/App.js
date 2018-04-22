@@ -2,7 +2,6 @@ import {Component} from "inferno";
 import {findDOMNode} from "react-dom";
 import {HashRouter, Route, Switch} from "inferno-router";
 import "../registerServiceWorker";
-import "../assets/css/app.css";
 import {PullToRefresh,Toast} from "antd-mobile";
 
 import {myAxios} from './../helpers';
