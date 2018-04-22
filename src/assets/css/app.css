@@ -1,0 +1,67 @@
+#app{
+  background: url("../img/bg.jpg") 0 0 no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+}
+#app > div:first-child{
+  flex:1;
+}
+.list-view-box{
+  color: #fff;
+}
+.list-view-box .list-view-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+.list-view-box .item-row{
+  display: flex;
+  justify-content: space-between;
+  padding:15px;
+
+}
+
+.list-view-box .item-row:nth-child(odd){
+  background: rgba(255, 255, 255, 0.1);
+}
+.list-view-box .item-row:nth-child(even){
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+.desk-detail{
+  padding-top:30px;
+  flex: 1;
+  color: #fff;
+}
+.desk-detail .title{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #fff;
+  font-weight:400;
+}
+
+.desk-info{
+  margin:0 30px;
+}
+.desk-info .hd{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.desk-info .ds-item{
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 3px;
+  overflow: hidden;
+  padding:10px;
+  color: #333;
+  margin-bottom: 10px;
+}
+.desk-info .ds-item .num{
+  color:#f00;
+}

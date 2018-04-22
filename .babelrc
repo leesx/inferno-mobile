@@ -1,0 +1,13 @@
+{
+  "presets": ["inferno-app", "flow"],
+  "plugins": [
+    ["babel-plugin-inferno", {"imports": true}],
+    [
+      "import",
+      {
+        "libraryName": "antd-mobile",
+        "style": "css"
+      }
+    ]
+  ]
+}
