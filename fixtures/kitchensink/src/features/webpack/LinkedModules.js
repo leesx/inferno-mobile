@@ -6,7 +6,7 @@
  */
 
 import Inferno from 'inferno';
-import './assets/style.css';
+import './assets/style.less';
 import { test, version } from 'test-integrity';
 
 export default () => {

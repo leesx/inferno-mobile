@@ -1,5 +1,5 @@
-import {Component} from "inferno";
-import {findDOMNode} from "react-dom";
+import {Component,linkEvent} from "inferno";
+import {findDOMNode} from "inferno-compat";
 import {HashRouter, Route, Switch} from "inferno-router";
 import "../registerServiceWorker";
 import {PullToRefresh,Toast} from "antd-mobile";
@@ -99,7 +99,7 @@ class HomeList extends Component {
                         }}
                     >
                         {this.state.data.map((item, index) => (
-                            <div className="item-row" onClick={() => this.handleClickRow(item.shopID)}>
+                            <div className="item-row" onClick={linkEvent(item.shopID,this.handleClickRow)}>
                                 <span>{item.shopName}</span>
                                 <span>{item.num}</span>
                             </div>
