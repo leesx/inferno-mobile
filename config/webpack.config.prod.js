@@ -179,7 +179,7 @@ module.exports = {
                                     },
                                     use     : [
                                         {
-                                            loader : require.resolve('less-loader'),
+                                            loader : require.resolve('css-loader'),
                                             options: {
                                                 importLoaders: 1,
                                                 minimize     : true,
@@ -209,7 +209,8 @@ module.exports = {
                                         {
                                             loader : require.resolve('less-loader'),
                                             options: {
-                                                modifyVars: theme
+                                                modifyVars: theme,
+                                                javascriptEnabled: true,
                                             }
                                         }
                                     ],

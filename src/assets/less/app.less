@@ -1,11 +1,18 @@
 #app{
-  background: url("../img/bg.jpg") 0 0 no-repeat;
-  background-size: cover;
   display: flex;
   height: 100vh;
 }
-#app > div:first-child{
-  flex:1;
+#app {
+  & >div.container{
+    flex:1;
+  }
+
+  & >div.containerBg{
+    flex:1;
+    background: url("../img/bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+  }
+
 }
 .list-view-box{
   color: #fff;
@@ -64,4 +71,22 @@
 }
 .desk-info .ds-item .num{
   color:#f00;
+}
+
+.scroll-box{
+  overflow: auto;
+  height: 400px;
+
+}
+
+.slide-box{
+  position: absolute;
+  left: 0;
+  top:0;
+  width:100%;
+  opacity: 0;
+  transform: translateX(380px);
+  transition: opacity 1s ease-in,transform .3s;
+  will-change: transform;
+
 }

@@ -25,8 +25,9 @@ const myAxios   = axios.create({
     ],
     params          : {
         accessToken: config.accessToken,
-        traceID    : config.traceID,
-        paperSize  : config.paperSize || 0,
+        groupID    : config.groupID,
+        shopIDs:config.shopIDs,
+        plat:1
     },
     cancelToken     : new CancelToken(function executor(c) {
         // An executor function receives a cancel function as a parameter

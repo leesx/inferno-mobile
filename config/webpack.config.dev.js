@@ -29,7 +29,7 @@ const env = getClientEnvironment(publicUrl);
 const cssLoaders = [
     require.resolve('style-loader'),
     {
-        loader : require.resolve('less-loader'),
+        loader : require.resolve('css-loader'),
         options: {
             importLoaders: 1,
         },
@@ -201,7 +201,8 @@ module.exports = {
                         use:[...cssLoaders,{
                             loader : require.resolve('less-loader'),
                             options: {
-                                modifyVars: theme
+                                modifyVars: theme,
+                                javascriptEnabled: true,
                             }
                         }]
                     },
