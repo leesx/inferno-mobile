@@ -85,7 +85,7 @@ module.exports = function (proxy, allowedHost) {
             context     : ['/shop/reports/**', '/food/opt/**'],
             changeOrigin: true,
             //target      : 'http://192.168.19.147:8081',
-            target      : 'http://dohko.api.meal-queue.hualala.com',
+            target      : 'http://xxxxx.com',
             secure      : false
         }],
         before(app) {
